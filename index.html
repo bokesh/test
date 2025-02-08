@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог массажистов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Каталог массажистов</h1>
+    </header>
+
+    <div class="filter">
+        <select id="cityFilter">
+            <option value="">Выберите город</option>
+            <option value="Алматы">Алматы</option>
+            <option value="Астана">Астана</option>
+        </select>
+
+        <select id="typeFilter">
+            <option value="">Тип массажа</option>
+            <option value="Классический">Классический</option>
+            <option value="Антицеллюлитный">Антицеллюлитный</option>
+            <option value="Спортивный">Спортивный</option>
+        </select>
+
+        <button onclick="applyFilters()">Фильтр</button>
+    </div>
+
+    <div class="profiles">
+        <div class="profile" data-city="Алматы" data-type="Классический">
+            <img src="massage1.jpg" alt="Массажист 1">
+            <h2>Анна</h2>
+            <p>Классический массаж, расслабление тела.</p>
+            <p class="price">3000₸ / 1 час</p>
+            <div class="buttons">
+                <a href="tel:+77010000000" class="button">Позвонить</a>
+                <a href="https://wa.me/77010000000" class="button whatsapp">WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="profile" data-city="Астана" data-type="Антицеллюлитный">
+            <img src="massage2.jpg" alt="Массажист 2">
+            <h2>Мария</h2>
+            <p>Антицеллюлитный массаж, улучшение кожи.</p>
+            <p class="price">4000₸ / 1 час</p>
+            <div class="buttons">
+                <a href="tel:+77020000000" class="button">Позвонить</a>
+                <a href="https://wa.me/77020000000" class="button whatsapp">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
